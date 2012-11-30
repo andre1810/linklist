@@ -1,6 +1,7 @@
 Linklist::Application.routes.draw do
-  resources :links
+  devise_for :users, :path_names => { :sign_up => "register" }
 
+  resources :links
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
