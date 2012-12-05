@@ -27,6 +27,7 @@ class LinksController < ApplicationController
   # GET /links/new.json
   def new
     @link = Link.new
+    @link.user = current_user
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,6 +44,7 @@ class LinksController < ApplicationController
   # POST /links.json
   def create
     @link = Link.new(params[:link])
+    @link.user = current_user
 
     respond_to do |format|
       if @link.save

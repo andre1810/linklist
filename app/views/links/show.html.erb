@@ -10,6 +10,8 @@
   <dd><%= @link.url %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
   <dd><%= @link.description %></dd>
+  <dt><strong>Ersteller:</strong></dt>
+  <dd><%= @link.user.username %></dd>
 </dl>
 
 <div class="form-actions">
