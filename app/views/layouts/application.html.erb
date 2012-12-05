@@ -30,28 +30,31 @@
       </div>
     </div>
   </div>
-
-  <% if notice != nil %>
   <div class="container">
     <div class="row">
-      <div class="alert alert-info">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        <strong>Info!</strong> <%= notice %>
-      </div>
-    </div>
-  </div>
-  <% end %>
+        <% if notice != nil %>
+        <div class="container">
+          <div class="row">
+            <div class="alert alert-info">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <strong>Info!</strong> <%= notice %>
+            </div>
+          </div>
+        </div>
+        <% end %>
 
-  <% if alert != nil %>
-  <div class="container">
-    <div class="row">
-      <div class="alert">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        <strong>Fehler!</strong> <%= notice %>
-      </div>
+        <% if alert != nil %>
+        <div class="container">
+          <div class="row">
+            <div class="alert">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <strong>Fehler!</strong> <%= notice %>
+            </div>
+          </div>
+        </div>
+        <% end %>
     </div>
   </div>
-  <% end %>
 
   <div class="container">
     <div class="row">
